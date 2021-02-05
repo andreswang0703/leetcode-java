@@ -54,7 +54,7 @@ public class ValidateBST {
     }
 
     // todo: build tree string parser
-    private static TreeNode buildValidBST() {
+    public static TreeNode buildValidBST() {
         TreeNode root = new TreeNode(20);
         TreeNode node1 = new TreeNode(10);
         TreeNode node2 = new TreeNode(50);
