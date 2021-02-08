@@ -19,12 +19,12 @@ public class InorderSuccessorInBST {
 
         TreeNode res = null;
         while (root != null) {
-            // if root.val == p.val, go right to find the leftmost of right tree
-            // when going right, the current node can't possibly be inorder successor
+            // if smaller or equal, current node is definitely not a successor
             if (root.val <= p.val) {
                 root = root.right;
             } else {
-                // whenever go left, the current node is a candidate for inorder successor
+                // if bigger, current node is one of the successors, but not necessarily the closest
+                // mark it as the candidate
                 res = root;
                 root = root.left;
             }
