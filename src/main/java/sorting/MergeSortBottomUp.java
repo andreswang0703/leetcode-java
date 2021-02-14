@@ -3,7 +3,7 @@ package sorting;
 import java.util.Arrays;
 
 /**
- * Top down approach for merging sort.
+ * Bottom up approach for merging sort (sorting by building up small sorted list to bigger ones).
  *
  * Start by merging 1-by-1, then 2-by-2, etc.
  *
@@ -12,7 +12,7 @@ import java.util.Arrays;
  *
  * Date: 02/14/2021
  */
-public class MergeSortTopDown {
+public class MergeSortBottomUp {
 
     private static Comparable[] aux;
 
