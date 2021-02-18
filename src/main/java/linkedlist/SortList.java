@@ -7,7 +7,7 @@ import java.util.List;
  * No.148 sort list. (medium)
  *
  * time: O(nlogn)
- * space: O(1)
+ * space: O(logn) - recursive call stack
  *
  * Date: 02/14/2021
  */
@@ -73,7 +73,7 @@ public class SortList {
         printList(sorted);
     }
 
-    private static ListNode getList() {
+    static ListNode getList() {
         ListNode l1 = new ListNode(0);
         ListNode l2 = new ListNode(7);
         ListNode l3 = new ListNode(3);
@@ -92,7 +92,7 @@ public class SortList {
         return l1;
     }
 
-    private static void printList(ListNode head) {
+    static void printList(ListNode head) {
         List<String> list = new ArrayList<>();
         while (head != null) {
             list.add("" + head.val);
