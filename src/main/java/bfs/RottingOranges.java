@@ -3,6 +3,10 @@ package bfs;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * No.994 Rotting oranges.
+ *
+ */
 public class RottingOranges {
 
     public int rotting(int[][] oranges) {
